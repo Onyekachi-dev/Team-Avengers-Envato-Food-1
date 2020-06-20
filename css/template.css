@@ -1,10 +1,236 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Playfair Display', serif; */
 
-style {
-    color: #11371B
-        #F09733
-        #6D5911
-        #FFFFFF
-        #131212;
+/*style {*/
+/*    color: #11371B*/
+/*        #F09733*/
+/*        #6D5911*/
+/*        #FFFFFF*/
+/*        #131212;*/
+/*}*/
+/* stylelint-disable selector-list-comma-newline-after */
+@import url(https://allfont.net/allfont.css?fonts=playfair-display-italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+@import url(https://allfont.net/allfont.css?fonts=playfair-display);
+body{
+    font-family: Playfair Display ;!important;
+}
+.item-1{
+    z-index:1;
+}
+.item-2{
+    z-index: 3;
+}
+.item-3{
+    z-index: 9;
+}
+.nav-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;!important;
+    font-size: 16px;!important;
+    line-height: 22px;!important;
+    color: #131212;
+}
+.nav-text:hover{
+    color: #F09733;
+}
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.blog-header-logo {
+    font-family: "Playfair Display Italic", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 64px;
+    color: #131212;
+}
+.blog-header-logo-2 {
+    font-family: "Playfair Display Italic", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    /*line-height:px;*/
+    color: #F09733!important;
+}
+.no-border {
+    border-radius: unset !important;
+}
+.border-left{
+    border-left: white;
+    border-width: 3px !important;
+
+}
+.border-left-dark{
+    border-left:  #C4C4C4 solid !important;
+    border-width: 2px !important;
+}
+.hero-text-header{
+    font-family:"Playfair Display Italic", Georgia, "Times New Roman", serif ;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 85px;
+
+    color: #FFFFFF;
+}
+.hero-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.h-500{
+    margin: auto;
+    min-height: 640px;
+    vertical-align: middle;
+    padding: 70px 0;
+}
+.hero{
+    display: grid;
+    place-items: center;
+    background: linear-gradient( rgba(19, 18, 18, 0.37) , rgba(19, 18, 18, 0.37)), url("../images/homepage-header.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+.reservation{
+    display: grid;
+    min-height: 600px;
+    background:url("../images/homepage-cover-2.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.map{
+    display: grid;
+    background:linear-gradient( rgba(240, 151, 51, 0.35), rgba(240, 151, 51, 0.35)),url("../images/Mapsicle Map.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.environment{
+    display: grid;
+    min-height: 650px;
+    background:url("../images/homepage-cover.png")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.environment-inner{
+    width: 638px;
+    height: 187px;
+    background-color: white;
+}
+.environment-content{
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 43px;
+}
+.food-headers{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+}
+.food-content{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+.chef-fav-header{
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+}
+
+
+.btn-orange{
+    color: white;
+    background:#F09733;
+    border-radius: 5px;
+    width: 251px;
+    font-family: "Open Sans"0;
+}
+
+
+@media only screen  and (min-width : 1224px) {
+    .chef-fav-2{
+        z-index: 9;
+        margin-top: -200px!important;
+    }
+}
+.reservation-header{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    color: #131212;
+}
+.inputform {
+    padding: 20px;
+    /*width: 400px;*/
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #131212;
+    border-radius: unset;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    font-size: 1em;
+    font-weight: 100;
+    color: #ffffff;
+}
+.form-label{
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #131212;
+
+}
+.form{
+    width: 771px;
+    background-color: white;
+    padding-top: 50px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+
 }
