@@ -15,13 +15,13 @@
 .nav-text{
     font-family: Open Sans;
     font-style: normal;
-    font-weight: 600;!important;
-    font-size: 16px;!important;
-    line-height: 22px;!important;
-    color: #131212;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: #131212 !important;
 }
 .nav-text:hover{
-    color: #F09733;
+    color: #F09733 !important;
 }
 .nav-scroller {
     position: relative;
@@ -112,6 +112,7 @@
     -o-background-size: cover;
     background-size: cover;
 }
+
 .map{
     display: grid;
     min-height: 600px;
@@ -165,10 +166,6 @@
     width: 251px;
     font-family: "Open Sans";
 }
-.chef-fav-2{
-    z-index: 9;
-    margin-top: -200px!important;
-}
 .form{
     background-color: white;
     padding: 10px;
@@ -206,6 +203,13 @@
         height: 304px;
         background-color: white;
     }
+    .chef-fav-2{
+        z-index: 9;
+        margin-top: -200px!important;
+    }
+}
+.margin-negative{
+    margin-top: -200px!important;
 }
 
 
