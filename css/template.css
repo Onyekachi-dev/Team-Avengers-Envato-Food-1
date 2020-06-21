@@ -1,28 +1,16 @@
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Playfair Display', serif; */
 
-/*style {*/
-/*    color: #11371B*/
-/*        #F09733*/
-/*        #6D5911*/
-/*        #FFFFFF*/
-/*        #131212;*/
-/*}*/
-/* stylelint-disable selector-list-comma-newline-after */
 @import url(https://allfont.net/allfont.css?fonts=playfair-display-italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
 @import url(https://allfont.net/allfont.css?fonts=playfair-display);
-body{
-    font-family: Playfair Display ;!important;
-}
+
 .item-1{
-    z-index:1;
+    z-index:2;
 }
 .item-2{
-    z-index: 3;
+    z-index: 1;
 }
 .item-3{
-    z-index: 9;
+    z-index: 3;
 }
 .nav-text{
     font-family: Open Sans;
@@ -55,14 +43,14 @@ body{
     -webkit-overflow-scrolling: touch;
 }
 
-.blog-header-logo {
-    font-family: "Playfair Display Italic", Georgia, "Times New Roman", serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 64px;
-    color: #131212;
+.food-header-logo {
+    /*font-family: "Playfair Display Italic", Georgia, "Times New Roman", serif;*/
+    font-style: italic !important;
+    font-weight: bold !important;
+    font-size: 64px !important;
+    color: #131212 !important;
 }
-.blog-header-logo-2 {
+.food-header-logo-2 {
     font-family: "Playfair Display Italic", Georgia, "Times New Roman", serif;
     font-style: italic;
     font-weight: bold;
@@ -126,6 +114,7 @@ body{
 }
 .map{
     display: grid;
+    min-height: 600px;
     background:linear-gradient( rgba(240, 151, 51, 0.35), rgba(240, 151, 51, 0.35)),url("../images/Mapsicle Map.png")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -141,11 +130,6 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-.environment-inner{
-    width: 638px;
-    height: 187px;
-    background-color: white;
-}
 .environment-content{
     font-family: "Playfair Display";
     font-style: normal;
@@ -154,6 +138,7 @@ body{
     line-height: 43px;
 }
 .food-headers{
+    font-family: "Playfair Display Italic";
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -178,16 +163,53 @@ body{
     background:#F09733;
     border-radius: 5px;
     width: 251px;
-    font-family: "Open Sans"0;
+    font-family: "Open Sans";
 }
-
-
+.chef-fav-2{
+    z-index: 9;
+    margin-top: -200px!important;
+}
+.form{
+    background-color: white;
+    padding: 10px;
+;
+}
+.address{
+    width: 100%;
+    height: 100%
+}
+.bb{;
+    border-bottom:1px;
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c6;
+}
 @media only screen  and (min-width : 1224px) {
-    .chef-fav-2{
-        z-index: 9;
-        margin-top: -200px!important;
+    .environment-inner{
+        width: 638px;
+        height: 187px;
+        background-color: #4e4e4e;
+    }
+    .form{
+        width: 771px;
+        background-color: white;
+        padding-top: 50px;
+        padding-right: 80px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+
+    }
+    .bb{
+        border: unset;
+    }
+    .address{
+        width: 328px;
+        height: 304px;
+        background-color: white;
     }
 }
+
+
+
 .reservation-header{
     font-family: Open Sans;
     font-style: normal;
@@ -225,12 +247,40 @@ body{
     color: #131212;
 
 }
-.form{
-    width: 771px;
-    background-color: white;
-    padding-top: 50px;
-    padding-right: 80px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+.address-header{
+    font-family:"Playfair Display Italic" ;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 43px;
+    /* identical to box height */
 
+
+    color: #131212;
+
+}
+
+.address-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+.number{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    background: #131212;
 }
