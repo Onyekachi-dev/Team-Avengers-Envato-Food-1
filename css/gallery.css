@@ -19,10 +19,12 @@ li {
   list-style: none;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
+.container-fluid {
   padding: 0;
+}
+
+.modal-header {
+  border-bottom: none !important;
 }
 
 /*********** NAVBAR ************/
@@ -61,11 +63,6 @@ li {
 }
 
 /*********** COVER IMAGE **********/
-.cover-image {
-  width: 100vw;
-  position: relative;
-}
-
 .hero-text {
   position: absolute;
   top: 0;
@@ -77,6 +74,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cover-image {
+  position: relative;
 }
 
 .cover-image img{
@@ -99,15 +100,20 @@ li {
   border-radius: 5px;
 }
 
-.custom-btn:focus {
+.custom-btn-focus {
   background: #F09733;
   color: white;
+  font-size: 12px;
 }
 .btn-list {
   justify-content: center;
   list-style: none;
-  margin: 30px 0;
-  padding: 0;
+  padding: 30px;
+  margin: 0;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .btn-list li {
@@ -119,9 +125,54 @@ li {
   margin-bottom: 20px;
 }
 
+.row a:hover {
+  opacity: .5;
+}
+
 .grid-container {
   padding: 0 60px;
 }
+
+/******* MODAL *********/
+.modal-content > .container-fluid {
+  position: relative;
+}
+
+.modal-image {
+  margin-bottom: 0 !important;
+}
+.close {
+  color: #131212 !important;
+  opacity: .6;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 9999;
+}
+
+.jumbotron {
+  background: white;
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+.jumbotron h2 {
+  font-weight: bold;
+  font-family: open sans-serif;
+}
+
+@media screen and (min-width: 768px){
+  .container .jumbotron, .container-fluid .jumbotron {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .container .jumbotron, .container-fluid .jumbotron {
+    padding: 15px 50px;
+  }
+}
+
 
 /******* FOOTER ********/
 
@@ -193,6 +244,10 @@ li {
   .grid-container {
     padding: 0 20px;
   }
+  .btn-list {
+    justify-content: space-between;
+    padding: 10px 5px;
+  }
 }
 
 .fade-in {
@@ -200,7 +255,7 @@ li {
 	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
- @-webkit-keyframes fade-in {
+@-webkit-keyframes fade-in {
   0% {
     opacity: 0;
   }
@@ -216,3 +271,19 @@ li {
     opacity: 1;
   }
 }
+
+.flip-in-hor-bottom {
+	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
