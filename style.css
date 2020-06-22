@@ -1,0 +1,30 @@
+style {
+    color: #11371B
+        #F09733
+        #6D5911
+        #FFFFFF
+        #131212;
+}
+
+.display-1{
+font-style: italic;
+
+color: #FFFFFF;
+}
+
+.display-6{
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
