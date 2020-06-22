@@ -1,0 +1,279 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+/*********** NAVBAR ************/
+.nav-header-container {
+  display: flex;
+  justify-items: center;
+}
+
+.brand-logo {
+  margin-left: auto;
+  width: 157px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default {
+  background: white;
+  border: none;
+}
+
+.nav-header-container .navbar-header {
+  margin-left: auto;
+}
+
+/*********** COVER IMAGE **********/
+.hero-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.295);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image {
+  position: relative;
+}
+
+.cover-image img{
+  width: 100%;
+}
+
+.cover-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 64px;
+  color: black;
+}
+
+.custom-btn {
+  background: #E0E0E0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.custom-btn-focus {
+  background: #F09733;
+  color: white;
+  font-size: 12px;
+}
+.btn-list {
+  justify-content: center;
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.btn-list li {
+  margin: 0 10px;
+}
+
+/************ GALLERY ************/
+.row img {
+  margin-bottom: 20px;
+}
+
+.row a:hover {
+  opacity: .5;
+}
+
+.grid-container {
+  padding: 0 60px;
+}
+
+/******* MODAL *********/
+.modal-content > .container-fluid {
+  position: relative;
+}
+
+.modal-image {
+  margin-bottom: 0 !important;
+}
+.close {
+  color: #131212 !important;
+  opacity: .6;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  z-index: 9999;
+}
+
+.jumbotron {
+  background: white;
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+.jumbotron h2 {
+  font-weight: bold;
+  font-family: open sans-serif;
+}
+
+@media screen and (min-width: 768px){
+  .container .jumbotron, .container-fluid .jumbotron {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 990px){
+  .container .jumbotron, .container-fluid .jumbotron {
+    padding: 15px 50px;
+  }
+}
+
+
+/******* FOOTER ********/
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 50px 30px;
+  background: #131212;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 0;
+}
+
+.footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .row div:nth-child(2) > p {
+  font-size: 14px;
+  margin-top: 100px;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 770px) {
+  .nav-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .brand-logo {
+    padding: 20px;
+    margin: 0;
+  }
+
+  .navbar-brand {
+    width: 160px;
+  }
+
+  .footer .row div:nth-child(2) > p {
+    margin-top: 0;
+  }
+
+  .cover-text {
+    font-size: 44px;
+  }
+}
+
+@media only screen and (max-device-width: 550px) {
+  .grid-container {
+    padding: 0 20px;
+  }
+  .btn-list {
+    justify-content: space-between;
+    padding: 10px 5px;
+  }
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flip-in-hor-bottom {
+	animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @keyframes flip-in-hor-bottom {
+  0% {
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+

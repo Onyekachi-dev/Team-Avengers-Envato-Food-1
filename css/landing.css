@@ -2,16 +2,6 @@
 @import url(https://allfont.net/allfont.css?fonts=playfair-display-italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
 @import url(https://allfont.net/allfont.css?fonts=playfair-display);
-
-.item-1{
-    z-index:2;
-}
-.item-2{
-    z-index: 1;
-}
-.item-3{
-    z-index: 3;
-}
 .nav-text{
     font-family: Open Sans;
     font-style: normal;
@@ -50,13 +40,13 @@
     font-size: 64px !important;
     color: #131212 !important;
 }
-.food-header-logo-2 {
+.nav-logo-2 {
     font-family: "Playfair Display Italic", Georgia, "Times New Roman", serif;
     font-style: italic;
     font-weight: bold;
     font-size: 20px;
     /*line-height:px;*/
-    color: #F09733!important;
+    color: black;
 }
 .no-border {
     border-radius: unset !important;
@@ -175,11 +165,6 @@
     width: 100%;
     height: 100%
 }
-.bb{;
-    border-bottom:1px;
-    border-bottom-style: solid;
-    border-bottom-color: #c6c6c6;
-}
 @media only screen  and (min-width : 1224px) {
     .environment-inner{
         width: 638px;
@@ -195,9 +180,7 @@
         padding-left: 80px;
 
     }
-    .bb{
-        border: unset;
-    }
+
     .address{
         width: 328px;
         height: 304px;
