@@ -1,0 +1,36 @@
+.jumbotron{
+    background-image:url(../images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 64px;
+    height:350px;
+    padding-top:10%;
+    border-radius:0;
+}
+.card{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F7F7F7;
+}
+.card-body h6{
+    font-weight: 700;
+}
+.card-body p{
+    font-size: 16px;
+    text-align: justify;
+}
+.card-body .btn{
+    color:white !important;
+    background-color: #F09733;
+}
+.card-body .btn:hover{
+    background-color: rgb(247, 167, 75);
+}
