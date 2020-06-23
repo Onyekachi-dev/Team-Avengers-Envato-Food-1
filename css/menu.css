@@ -1,13 +1,6 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Playfair Display', serif; */
 
-style {
-    color: #11371B
-        #F09733
-        #6D5911
-        #FFFFFF
-        #131212;
-}
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -15,20 +8,10 @@ h3{
 	font-family: 'Playfair Display', serif;
 	margin-top: 20px;
 }
-#navigation{
-  margin-left: 25%;
- 
-}
-#navigation a{
-   color: rgb(0, 0, 0);
-}
 section{
 	padding-left:50px;
 }
 .overlay-text{
-   osition: absolute;
-    eft: 30px;
-    op: 30px;
 	color: rgb(255, 255, 255);
 	background-color: rgba(0, 0, 0, 0.5);
 	padding-top: 50px;
