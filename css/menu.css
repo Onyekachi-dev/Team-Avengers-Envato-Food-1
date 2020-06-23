@@ -11,6 +11,20 @@ h3{
 section{
 	padding-left:50px;
 }
+.jumbotron{
+    background-image:url(../images/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 64px;
+    height:350px;
+    padding-top:10%;
+    border-radius:0;
+}
 .overlay-text{
 	color: rgb(255, 255, 255);
 	background-color: rgba(0, 0, 0, 0.5);
@@ -27,7 +41,7 @@ section{
 }
 .Horizontal_Line{
 	border-bottom:2px solid black;
-	idth:30px;
+	width:30px;
 	display:inline;
 	color:transparent;
 }
