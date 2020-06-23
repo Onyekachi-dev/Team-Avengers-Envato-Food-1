@@ -1,13 +1,6 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Playfair Display', serif; */
 
-style {
-    color: #11371B
-        #F09733
-        #6D5911
-        #FFFFFF
-        #131212;
-}
 body{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -15,20 +8,10 @@ h3{
 	font-family: 'Playfair Display', serif;
 	margin-top: 20px;
 }
-#navigation{
-  margin-left: 25%;
- 
-}
-#navigation a{
-   color: rgb(0, 0, 0);
-}
 section{
 	padding-left:50px;
 }
 .overlay-text{
-   osition: absolute;
-    eft: 30px;
-    op: 30px;
 	color: rgb(255, 255, 255);
 	background-color: rgba(0, 0, 0, 0.5);
 	padding-top: 50px;
@@ -48,17 +31,51 @@ section{
 	display:inline;
 	color:transparent;
 }
-.social-icon{
-  float: right;
-  margin-bottom: 15px;
-  font-size: 22px;
+.nav-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+    color: #131212 !important;
 }
-.social-icon a{
-  display: inline;
-  color: rgb(255, 255, 255);
-  padding: 8px;
+.nav-text:hover{
+    color: #F09733 !important;
 }
-footer{
-	background: rgb(0, 0, 0);
-	padding:20px 50px 20px 50px;
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.footer{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    background: #131212;
+}
+.nav-logo-2 {
+    font-family: "Playfair Display Italic", Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    /*line-height:px;*/
+    color: black;
 }
